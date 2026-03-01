@@ -11,7 +11,7 @@ conda activate fire_analysis
 
 ## Project Structure
 
-
+text
 data/
 raw-data/ # Raw data files
 CHXRSA.csv # Chicago Home Price Index (FRED)
@@ -27,7 +27,7 @@ preprocessing.py # Cleans, annualizes, and merges source data
 plot_fires.py # Generates project visualizations
 
 
-⁠ ## Usage
+## Usage
 
 1. Download the large Zillow file and place it here:
 `data/raw-data/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv`
