@@ -9,7 +9,7 @@ st.caption("Core metrics: PIR / PTI, with API as auxiliary metric")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../output/merged_annual_updated.csv")
+    return pd.read_csv("../../data/derived-data/merged_annual_updated.csv")
 
 
 def recompute_metrics(df, p_base=300000, down_payment=0.2, term_years=30, rate_shock_bp=0):
