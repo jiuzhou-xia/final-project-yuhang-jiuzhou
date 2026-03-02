@@ -10,7 +10,7 @@ st.caption("Core metrics: PIR / PTI, with API as auxiliary metric")
 
 @st.cache_data
 def load_data():
-    data_path = Path(__file__).resolve().parents[2] / "output" / "merged_annual_updated.csv"
+    data_path = Path(__file__).resolve().parents[1] / "output" / "merged_annual_updated.csv"
     return pd.read_csv(data_path)
 
 
