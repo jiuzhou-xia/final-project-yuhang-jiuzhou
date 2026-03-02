@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 import streamlit as st
+from pathlib import Path
 import altair as alt
 
 st.set_page_config(page_title="Chicago Housing Affordability Dashboard", layout="wide")
@@ -9,7 +10,7 @@ st.caption("Core metrics: PIR / PTI, with API as auxiliary metric")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../../data/derived-data/merged_annual_updated.csv")
+    return pd.read_csv("../../output/merged_annual_updated.csv")
 
 
 def recompute_metrics(df, p_base=300000, down_payment=0.2, term_years=30, rate_shock_bp=0):
