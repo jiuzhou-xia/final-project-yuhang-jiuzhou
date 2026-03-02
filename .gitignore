@@ -1,2 +1,8 @@
 data/raw-data/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv
 .DS_Store
+
+# macOS
+.DS_Store
+
+# generated outputs
+code/output/
