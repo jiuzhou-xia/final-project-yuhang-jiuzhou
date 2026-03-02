@@ -10,7 +10,8 @@ st.caption("Core metrics: PIR / PTI, with API as auxiliary metric")
 
 @st.cache_data
 def load_data():
-    return pd.read_csv("../../output/merged_annual_updated.csv")
+data_path = Path(__file__).resolve().parents[2] / "output" / "merged_annual_updated.csv"
+return pd.read_csv(data_path)
 
 
 def recompute_metrics(df, p_base=300000, down_payment=0.2, term_years=30, rate_shock_bp=0):
@@ -122,7 +123,6 @@ chart_core = alt.layer(c_pir, c_pti).resolve_scale(y="independent").properties(t
 st.altair_chart(chart_core, use_container_width=True)
 
 
-# ===== Correlation heatmap =====
 # --- Fix NaN in bubble size ---
 sc_df = flt.copy()
 sc_df["income_median"] = pd.to_numeric(sc_df["income_median"], errors="coerce")
