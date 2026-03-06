@@ -2,13 +2,6 @@
 
 This project processes and visualizes Chicago housing affordability using FRED and Zillow data.
 
-## Setup
-
-```
-conda env create -f environment.yml
-conda activate fire_analysis
-```
-
 ## Project Structure
 
 ```
@@ -42,13 +35,5 @@ Download link:
 https://files.zillowstatic.com/research/public_csvs/zhvi/Zip_zhvi_uc_sfrcondo_tier_0.33_0.67_sm_sa_month.csv?t=1772398440
 ```
 
-2. Run preprocessing to build the analysis dataset:
- ⁠bash
-python code/preprocessing.py
 
-
-⁠ 3. Generate plots:
- ⁠bash
-python code/plot_fires.py
-```
 
